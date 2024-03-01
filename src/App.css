@@ -1,0 +1,561 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/header-background.png");
+
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5%;
+  background-color: rgba(33, 0, 70, 0.3);
+}
+.navbar-brand {
+  width: 15%;
+  margin-left: 2%;
+  font-size: 1rem;
+}
+.nav-items {
+  width: 20%;
+  margin-right: 10%;
+}
+.nav-items ul {
+  display: flex;
+}
+.nav-items ul li {
+  margin: 2% 1% 0 5%;
+  list-style: none;
+}
+.nav-items ul li:hover {
+  color: rgb(151, 32, 255);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.nav-social-item {
+  text-align: center;
+  height: 100%;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.nav-social-item:hover {
+  background-color: rgb(151, 32, 255);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.nav-button {
+  margin-right: 5%;
+  margin-top: 1.1%;
+}
+.nav-button button {
+  height: 70%;
+  width: 130px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5%;
+  font-weight: 600;
+}
+.nav-button button:hover {
+  cursor: pointer;
+  background-color: rgb(42, 0, 80);
+  transition: 0.2s ease-in-out;
+}
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.header-container-1 {
+  padding: 2%;
+  width: 50%;
+  margin: 0;
+  margin-top: 3%;
+}
+.header-container-1 .introduction {
+  font-size: 3rem;
+  padding: 0 10% 0 10%;
+  opacity: 90%;
+}
+.header-container-2 img {
+  position: relative;
+  margin-top: 7%;
+  width: 75%;
+  animation-name: logomove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes logomove {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 7%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+.header-container-1 div p {
+  padding: 2% 10% 0 10%;
+  color: rgb(174, 174, 174);
+  line-height: 2rem;
+}
+.header-button {
+  margin-top: 5%;
+  margin-left: 10%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  padding: 2%;
+}
+.header-button:hover {
+  cursor: pointer;
+  background-color: rgb(42, 0, 80);
+  transition: 0.2s ease-in-out;
+}
+#skills {
+  background-image: url("./images//skill-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  padding-bottom: 5%;
+}
+.skills-container {
+  color: white;
+  position: relative;
+  bottom: 10vh;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  height: 50vh;
+  padding: 2%;
+  width: 70%;
+  margin-top: 10%;
+  background-color: rgb(21, 21, 21);
+  border-radius: 50px;
+  border: 2px solid rgb(24, 24, 24);
+}
+.skills-container p {
+  padding: 0 10% 0 10%;
+  color: rgb(174, 174, 174);
+}
+.skill-carousel {
+  margin-top: 10%;
+}
+.skill-image img {
+  width: 30%;
+  margin: 0 auto 0 auto;
+  padding: 5px;
+  border-radius: 100px;
+}
+#projects {
+  margin-top: 0;
+  text-align: center;
+  background: rgb(3, 0, 48);
+  background: radial-gradient(
+    circle,
+    rgba(3, 0, 48, 1) 0%,
+    rgba(49, 26, 48, 1) 100%
+  );
+  color: white;
+  overflow: auto;
+}
+#projects h2 {
+  margin: 5% 0 0 0;
+}
+#projects p {
+  margin-bottom: 2%;
+}
+#projects a button {
+  height: 4vh;
+  width: 140px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+#projects a button:hover {
+  cursor: pointer;
+  background-color: rgb(42, 0, 80);
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project-image img {
+  width: 100%;
+  height: 40vh;
+  border: 2px solid rgb(59, 59, 59);
+  border-radius: 40px;
+}
+.project {
+  width: 35vw;
+  position: relative;
+  border-radius: 40px;
+  margin-bottom: 2%;
+}
+.project-title {
+  color: rgb(221, 221, 221);
+}
+.hover-bg {
+  width: 100%;
+  height: 40.5vh;
+  position: absolute;
+  top: 0%;
+  left: 0.1rem;
+  opacity: 0; /* Initially hidden */
+  background: rgb(33, 40, 229);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 40, 229, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 40px;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.project:hover .hover-bg {
+  opacity: 0.9; /* Show background on hover */
+}
+
+.project-desc {
+  position: absolute;
+  width: 70%;
+  bottom: 0%; /* Initially position the description outside the card */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  text-align: center;
+  transition: bottom 0.3s ease, opacity 0.3s ease; /* Transition for sliding and opacity */
+}
+
+.project:hover .project-desc {
+  bottom: 35%; /* Slide description from bottom to top */
+  opacity: 1; /* Show project description on hover */
+}
+#contact {
+  background: rgb(114, 0, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 0, 94, 1) 0%,
+    rgba(52, 0, 96, 1) 100%
+  );
+  overflow: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding: 1%;
+  padding-bottom: 5%;
+}
+
+.contact-img img {
+  width: 80%;
+  margin: 10% 0 0 3%;
+}
+.contact-form h1 {
+  font-size: 2.5rem;
+}
+.contact-form {
+  margin-right: 10%;
+  color: white;
+}
+.contact-form form input {
+  width: 47%;
+  margin: 3px;
+  text-indent: 20px;
+  border-radius: 10px;
+  height: 6vh;
+  background-color: rgb(86, 43, 104);
+  border: 1px solid white;
+  font-size: 1rem;
+  color: white;
+}
+.contact-form form input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+.contact-form form textarea {
+  margin: 1%;
+  background-color: rgb(86, 43, 104);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  width: 98%;
+  height: 20vh;
+}
+.contact-form form textarea::placeholder {
+  text-indent: 15px;
+  font-style: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+.contact-form form button {
+  width: 100px;
+  height: 4vh;
+  margin: 1%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+.contact-form form button:hover {
+  cursor: pointer;
+  background-color: rgb(86, 43, 104);
+  transition: 0.2s ease-in-out;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  padding: 4%;
+}
+.footer-socials ul {
+  display: flex;
+  list-style: none;
+}
+.footer-socials {
+  margin-right: 5%;
+}
+.footer-socials ul li {
+  margin: 0 5%;
+}
+.footer-socials ul li a button {
+  width: 40px;
+  height: 40px;
+}
+.footer-socials p {
+  color: rgb(174, 174, 174);
+}
+
+/* Mobile devices */
+.mobile-navbar {
+  display: none;
+}
+.mobile-nav-items {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  .nav-items {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+  .mobile-navbar {
+    display: inline-block;
+    margin: 4%;
+    width: 50px;
+  }
+  .mobile-nav-button button {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  .mobile-nav-items {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 0;
+    background-color: black;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.3s ease; /* Add transition for height */
+  }
+  .open {
+    height: 28vh; /* Define height when open */
+  }
+
+  .mobile-nav-items a .nav-social-item {
+    display: block;
+    margin: 2% auto 0 auto;
+    width: 20%;
+    height: 5vh;
+  }
+  .close-nav {
+    display: block;
+    margin: 2% auto 0 auto;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+  }
+  .close-nav:hover {
+    background-color: red;
+  }
+  .header-container-1 .introduction {
+    font-size: 2rem;
+  }
+  .header-container-1 {
+    width: 50%;
+    padding: 0;
+  }
+  .header-container-2 {
+    width: 50%;
+  }
+  .header-container-2 img {
+    width: 50%;
+    margin-left: 20%;
+  }
+  .skills-container {
+    margin-top: 20%;
+  }
+  .project-image img {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form form input {
+    width: 40%;
+    text-indent: 3px;
+  }
+  .contact-form form input::placeholder {
+    font-size: 14px;
+  }
+  .title h3 {
+    font-size: 1rem;
+  }
+  .hover-bg {
+    display: none;
+  }
+  .project-desc {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .navbar-brand {
+    margin-left: 5%;
+  }
+  .header {
+    text-align: center;
+    padding-bottom: 20%;
+  }
+  .header-container-1 .introduction {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .header-container-2 img {
+    position: absolute;
+    top: 30vh;
+    right: 25vw;
+    margin-top: 15%;
+    width: 40%;
+  }
+  .header-container-1 {
+    text-align: center;
+    position: relative;
+    left: 19vw;
+    top: 25vh;
+    width: 100%;
+  }
+  .header-container-1 .header-button {
+    margin: 0 auto;
+  }
+  #skills {
+    overflow: auto;
+    margin-top: 55%;
+  }
+  .skills-container {
+    position: relative;
+    top: 2vh;
+  }
+  .project {
+    overflow: hidden;
+  }
+  #projects {
+    padding: 20% 0;
+  }
+  #projects p {
+    margin-bottom: 10%;
+  }
+  #projects a button {
+    margin-bottom: 10%;
+  }
+  .project-image img {
+    height: 20vh;
+  }
+  .title h3 {
+    font-size: 0.8rem;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20%;
+  }
+  .contact-form {
+    margin: 0 auto 0 auto;
+  }
+  .contact-form form button {
+    margin: 2% auto;
+  }
+  .mobile-nav-items a .nav-social-item {
+    width: 10%;
+    height: 100%;
+  }
+  .mobile-nav-items a {
+    margin-top: 2%;
+  }
+  .close-nav {
+    margin-top: 4%;
+  }
+  .mobile-nav-button {
+    margin-top: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .header-container-2 img {
+    margin-top: 25%;
+    position: absolute;
+  }
+  .project-image img {
+    height: 15vh;
+  }
+  .footer-socials p {
+    text-align: center;
+    margin-left: 30%;
+    font-size: 12px;
+  }
+  .footer-logo h1 {
+    font-size: 1.3rem;
+  }
+}
